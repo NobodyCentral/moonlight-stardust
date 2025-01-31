@@ -31,7 +31,7 @@ INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
 export INTERNAL_IP
 
 # Switch to the container's working directory
-cd /mnt/server || exit 1
+# cd /mnt/server || exit 1
 
 # Print Java version
 printf "\033[1m\033[33mcontainer@pelican~ \033[0mjava -version\n"
