@@ -1,10 +1,5 @@
 FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:21-jdk-jammy
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
-
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
-LABEL       org.opencontainers.image.licenses=MIT
-
 RUN         apt update -y \
             && apt install -y \
                 curl \
