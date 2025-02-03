@@ -7,10 +7,10 @@ on:
     branches:
       - master
     paths:
-      - installers/**
+      - moons/**
 jobs:
   push:
-    name: "installers:{{ matrix.tag }}"
+    name: "moons:{{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
