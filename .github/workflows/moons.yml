@@ -1,4 +1,4 @@
-name: build installers
+name: build moons
 on:
   workflow_dispatch:
   schedule:
