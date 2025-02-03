@@ -10,7 +10,7 @@ on:
       - java/**
 jobs:
   push:
-    name: "ptero-yolks:java_${{ matrix.tag }}"
+    name: "moonlight-stardust:java_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -43,4 +43,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/nobodycentral/ptero-yolks:java_${{ matrix.tag }}
+            ghcr.io/nobodycentral/moonlight-stardust:java_${{ matrix.tag }}
